@@ -1,0 +1,17 @@
+time:
+
+7 out of 11 do not match
+average margins too wide
+
+too high false non-authentication
+same rate as the imposter
+
+same for different models, same combinations
+the grid size did not effect the results.
+
+pos:
+
+at least on of the x or y coordinates do not fit the min max margins
+average margins enourmously wide
+
+not suitable to create a simple algorithm to use as a security parameter.

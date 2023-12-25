@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta charset="UTF-8">
+<script>
+// event handler function
+function submit(e) {
+    e = e || window.event;
+
+    var pageX = e.pageX;
+    var pageY = e.pageY;
+
+    // IE 8
+    if (pageX === undefined) {
+        pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+        pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+    }
+
+    console.log(pageX, pageY);
+}
+
+// attach handler to the click event of the document
+//if (document.attachEvent) document.attachEvent('onclick', submit);
+//else document.addEventListener('click', submit);
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#808080">
+
+	<button onClick="submit()">Submit</button><br>
+
+</body>
+</html>

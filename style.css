@@ -1,0 +1,101 @@
+.vertex1, .vertex2, .vertex3, .vertex4, .vertex5, .vertex6, .vertex7, .vertex8, .vertex9 {
+	display: table-cell;
+	width: 180px;
+	height: 180px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+#a1, #a2, #a3, #b1, #b2, #b3, #c1, #c2, #c3 {
+	vertical-align: middle;
+}
+
+.vertex1 {background-position: left top;}
+.vertex2 {background-position: center top;}
+.vertex3 {background-position: right top;}
+.vertex4 {background-position: left center;}
+.vertex5 {background-position: center center;}
+.vertex6 {background-position: right center;}
+.vertex7 {background-position: left bottom;}
+.vertex8 {background-position: center bottom;}
+.vertex9 {background-position: right bottom;}
+
+#dot1, #dot2, #dot3, #dot4, #dot5, #dot6, #dot7, #dot8, #dot9 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50,50,50);
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #800000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 32px;
+  padding: 20px;
+  width: 400px;
+  height: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.but {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #800000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 0px;
+  width: 90px;
+  height: 35px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.butID {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #800000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+  width: 170px;
+  height: 60px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2x2hover</title>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="test.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#808080" style="color:black;" onload="gridSize(2);">
+
+<center>
+	<h1>Tıklamadan Seçme</h1>
+	<p>Lütfen teste başlamadan önce ID'nizi giriniz.</p>
+	<button class="but" onclick="submitID()">ID'inizi Gir</button>
+	<p>Kombinasyon 12 noktadan oluşmak zorundadır ve diğer testler ile aynı olmalıdır.</p>
+	<p>Sadece yan yana olan noktaları seçebilirsiniz.</p>
+	<p>Farenizi noktaların üzerinde gezdirerek kombinasyonunuzu çiziniz.</p>
+	<p>Kombinasyonunuzu çizdikten sonra "submit pattern" tuşu ile 5 kere tekrar ederek kayıt ediniz.</p>
+	<p>Çizdiğiniz kombinasyonu sıfırlamak için, "reset pattern" butonuna basınız.</p>
+	<p style="display: inline;">Seçilen Nokta Sayısı:</p>
+	<p id="counter" style="display: inline;">0</p><br>
+	<p style="display: inline;">Kayıt Sayısı:</p>
+	<p id="regCount" style="display: inline;">0</p>
+
+<div id="table" style="display: table; padding-top: 25px;">
+	<div id="a" style="display: table-row;">
+		<div id="a1" class="vertex1"><span id="dot1" onmouseover="selectVertex('a1')"></span></div>
+		<div id="a2" class="vertex2"><span id="dot2" onmouseover="selectVertex('a2')"></span></div>
+	</div>
+	<div id="b" style="display: table-row;">
+		<div id="b1" class="vertex4"><span id="dot4" onmouseover="selectVertex('b1')"></span></div>
+		<div id="b2" class="vertex5"><span id="dot5" onmouseover="selectVertex('b2')"></span></div>
+	</div>
+</div>
+	<br/><br/>
+	<button class="but" onClick="submit()">Submit Pattern</button>
+	<button class="but" onClick="resetPatt()">Reset Pattern</button><br>
+	<p>Test verilerinizi girdikten sonra aşağıdaki butona basarak verilerinizi gönderiniz.</p>
+	<button class="but" onclick="sendTestData()">Send Test Data</button></br>
+	<p id="proceed">Lütfen bir sonraki teste geçiniz.</p>
+	<button id="nextTest" class="but" onclick="location.href='2x2click-tr.html';">Next Test</button>
+</center>
+
+</body>
+</html>
